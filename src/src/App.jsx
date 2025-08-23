@@ -1,12 +1,13 @@
+import React from 'react';
 import { useState } from 'react'
-import Countdown from './components/Countdown.jsx'
+import Timer from './components/Timer.jsx'
 import './App.css'
 
 function App() {
 
   return (
     <>
-      <Countdown />
+      <Timer duration={10}/>
     </>
   )
 }

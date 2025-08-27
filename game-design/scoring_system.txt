@@ -1,0 +1,42 @@
+# Scoring System
+
+## Collectible item-based scoring
+
+- Divide collectibles into "edible", "inedible", "dietary-restricted", score accordingly
+  - Edible, requested: +X points
+  - Dietary-restricted: -X points
+  - Inedible: -Y points where Y > X (inedible is worse than dietary-restricted)
+  - (Stretch feature) Edible, non-dietary restricted: rand(-Z, +Z) value w/ customer comment
+  - (Stretch feature) 2 difficulty levels
+    - Easy mode: Collecting inedible item loses points
+    - Hard mode: Collecting inedible item = level over
+
+- Bonus multiplier for matching recipe exactly
+
+## Timer-based scoring
+
+- Assume (for now) 90s to complete maze
+- Score multiplier for completing maze in less than:
+  - 15s: 8X (where X = value for edible, requested items)
+  - 30s: 4X (same as above)
+  - 60s: 2X (same as above)
+  - > 60s: 1X (same as above)
+
+## Per-level scoring formula
+
+([Total score at end of maze run w/ floor of 0 to avoid negative numbers)*
+(1.Q where Q is the number of ingredients in the recipe if recipe is matched perfectly])
++
+(Timer-based scoring value)
+= Total score
+
+## Win conditions
+
+- Get from starting position to ending position/maze exit before timer runs out
+- Positive final score
+
+## Loss conditions
+
+- Total points <= 0
+- Timer runs out before getting to ending position/maze exit
+- (Stretch feature) Collecting inedible item on "Hard Mode" difficulty

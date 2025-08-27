@@ -1,22 +1,25 @@
 Create folders for assets and designs
 
 Week 8
-Saturday - Take a look at React (a JavaScript library). 
+Saturday - Take a look at React (a JavaScript library).
 View existing projects
-Project structure - How do we want to organize our code?
-Figure out how to add a countdown timer and a score to the screen
-Explore score system
-Add menu page
+✅ Project structure - How do we want to organize our code?
+✅ Figure out how to add a countdown timer to the screen
+Figure out how to add a score to the screen (partially done)
+✅ Explore score system
+Add menu page (partially done)
 
 LABOR DAY WEEK
-Navigation between pages
-+ stitching the pages together
-Have basic requirements for the project squared away
-About page
-Contact page with form validation
-Finding assets and designs 
+Navigation between pages (partially done)
+Stitch pages/modules together
+Finding assets and designs - Look at APIs for assets vs. static hosting our own
+Have basic requirements for the project code complete:
 
-Week 9
+- About page
+- Contact page with form validation
+
+Week 9 - In class: delegate responsibilities that we can each do some work on individually
+
 Icon movement
 Basic grid/maze layout
 Wiring up assets (place them where they need to be, remove any placeholders we have)

@@ -1,0 +1,20 @@
+- Themes
+  - "Edibles" would be Herbs/Fruits for a healing elixir
+  - "Inedibles" could be forest critters
+  - "Dietary Restriction" would be some subset of the Herbs/Fruits list
+
+- Gameplay sprites (tiles will be somewhere around 25x25px to 50x50px)
+  - Note: When adding (potential) sprites/icons/images to assets directory, try to keep filesize as small as possible because git is best used for versioning small, plain-text files rather than storing large(r) binary files (like images, non-plain-text files, etc.)
+  - Moving
+    - Some of the Herbs/Fruits can move (?)
+    - Forest critters
+    - Basket/bag representing player's position in maze
+  - Stationary
+    - Maze Walls would be Bushes/Hedges
+    - Some of the Herbs/Fruits
+    - Little house representing where you're delivering the elixir to represent exit from the maze
+  - Do we want to use emoji for any of the above (as placeholder/backup)?
+
+- Fonts for score, timer and app (links, app text, form text, etc.) TBD
+
+- Need to distinguish what design elements we'll create via CSS vs. via image/icon/sprite/etc.

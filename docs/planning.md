@@ -10,18 +10,18 @@ Figure out how to add a score to the screen (partially done)
 Add menu page (partially done)
 
 LABOR DAY WEEK
-Navigation between pages (partially done)
-Stitch pages/modules together
-Finding assets and designs - Look at APIs for assets vs. static hosting our own
-Have basic requirements for the project code complete:
+✅ Navigation between pages (partially done)
+✅ Stitch pages/modules together
+✅ Finding assets and designs - Look at APIs for assets vs. static hosting our own
+✅ Have basic requirements for the project code complete:
 
-- About page
-- Contact page with form validation
+✅ - About page
+✅ - Contact page with form validation
 
 Week 9 - In class: delegate responsibilities that we can each do some work on individually
 
-Icon movement
-Basic grid/maze layout
+Tay - Icon movement
+Joseann - Basic grid/maze layout
 Wiring up assets (place them where they need to be, remove any placeholders we have)
 Community get-together - 1hr of Saturday class (9/6)
 

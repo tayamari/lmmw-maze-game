@@ -20,8 +20,8 @@ LABOR DAY WEEK
 
 Week 9 - In class: delegate responsibilities that we can each do some work on individually
 
-Tay - Icon movement
-Joseann - Basic grid/maze layout
+✅ - Icon movement
+✅ - Basic grid/maze layout
 Wiring up assets (place them where they need to be, remove any placeholders we have)
 Community get-together - 1hr of Saturday class (9/6)
 

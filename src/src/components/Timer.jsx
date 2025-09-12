@@ -6,8 +6,8 @@ function Timer({duration}) {
 
     const [completedTime,setCompletedTime] = React.useState(() => Date.now()+ duration*1000)
     const renderer = ({minutes,seconds,completed}) => {
-        if(completed)return <span>0:00</span>;
-        return <span>{minutes}:{seconds}</span>;
+        if(completed)return <div>0:00</div>;
+        return <div>{minutes}:{seconds}</div>;
     }
 
     return (

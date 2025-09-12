@@ -5,9 +5,11 @@ import GameBoard from './GameBoard.jsx'
 
 function Home() {
     return(
-        //<Timer duration={10}/>
+        <div>
+            <Timer duration={10}/>
         
-        <GameBoard/>
+            <GameBoard/>
+        </div>
     )
 }
 

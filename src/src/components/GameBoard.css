@@ -10,7 +10,7 @@
     display: inline-block;
 }
 
-.coin {
+.randomIngredient {
     width: 50px;
     height: 50px;
     display: inline-block;
@@ -23,13 +23,13 @@
     display: inline-block;
 }
 
-.ghost {
+.randomCritter {
     width: 50px;
     height: 50px;
     display: inline-block;
 }
 
-.pacman {
+.players {
     width: 50px;
     height: 50px;
     display: inline-block;
@@ -37,4 +37,38 @@
 
 div {
     line-height: 0px;
+}
+
+#world {
+  background-color: white;
+  padding: 24px 0;
+}
+
+/* Score and Timer Bar */
+.score-timer-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 700px; /* Increase width if needed */
+  margin: 0 auto 24px auto;
+  padding: 12px 32px;
+  background: #232323;
+  color: #fff;
+  border-radius: 24px;
+  font-weight: 600;
+  font-size: 1.3rem;
+  box-sizing: border-box;
+  letter-spacing: 0.5px;
+  gap: 32px; /* Add gap between columns */
+}
+
+.score-timer-bar span {
+  white-space: nowrap; /* Prevent wrapping */
+}
+
+
+/* Game Map Container */
+.game-map-container {
+  width: 650px;
+  margin: 0 auto;
 }

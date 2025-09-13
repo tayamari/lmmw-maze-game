@@ -5,7 +5,7 @@ Saturday - Take a look at React (a JavaScript library).
 View existing projects
 ✅ Project structure - How do we want to organize our code?
 ✅ Figure out how to add a countdown timer to the screen
-Figure out how to add a score to the screen (partially done)
+✅ Figure out how to add a score to the screen (partially done)
 ✅ Explore score system
 Add menu page (partially done)
 
@@ -22,15 +22,15 @@ Week 9 - In class: delegate responsibilities that we can each do some work on in
 
 ✅ - Icon movement
 ✅ - Basic grid/maze layout
-Wiring up assets (place them where they need to be, remove any placeholders we have)
-Community get-together - 1hr of Saturday class (9/6)
+✅ - Wiring up assets (place them where they need to be, remove any placeholders we have)
+✅ - Community get-together - 1hr of Saturday class (9/6)
+
 
 Week 10
 ✅ - Collision detection
 Add additional styling to the grid and maze layout
-Conditions for winning or losing (i.e timer goes down and scoring)
-Add Timer Component to Game Board component
-
+✅ - Conditions for winning or losing (i.e timer goes down and scoring)
+✅ - Add Timer Component to Game Board component
 
 Week 11
 Testing/bug fixes

@@ -1,0 +1,11 @@
+.timer-inline {
+  display: inline-block;
+  min-width: 48px;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  font-size: 1.2em;
+  color: #fff;
+  letter-spacing: 1px;
+  background: transparent;
+}

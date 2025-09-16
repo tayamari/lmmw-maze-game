@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import wall from "../assets/sprites/bush.png";
-import { randomIngredient, randomCritter } from './AssetRendering.jsx';
+import { randomIngredients, randomCritter } from './AssetRendering.jsx';
 import players from "../assets/sprites/orange.png";
 import "./GameBoard.css";
 import { checkWinningCondition } from './GameConditions.jsx';
@@ -8,13 +8,13 @@ import Timer from "./Timer";
 
 const initialMap = [
     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], 
-    [1, 3, 3, 3, 3, 3, 1, 3, 2, 3, 3, 3, 1],
-    [1, 3, 2, 1, 1, 3, 1, 3, 1, 1, 1, 3, 1],
+    [1, 3, 3, 3, 3, 3, 1, 3, 6, 3, 3, 3, 1],
+    [1, 7, 1, 1, 1, 3, 1, 3, 1, 1, 1, 3, 1],
     [1, 3, 1, 3, 3, 3, 3, 3, 3, 3, 1, 3, 1],
     [1, 3, 3, 3, 1, 1, 5, 1, 1, 3, 3, 3, 1],
     [1, 3, 1, 3, 3, 3, 3, 3, 3, 3, 1, 3, 1],
     [1, 3, 1, 1, 3, 3, 1, 3, 3, 1, 1, 3, 1],
-    [1, 4, 3, 3, 3, 3, 1, 4, 3, 3, 3, 2, 1],
+    [1, 4, 3, 3, 3, 3, 1, 4, 3, 3, 3, 8, 1],
     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
 ];
 
@@ -135,6 +135,7 @@ const GameBoard = () => {
                     </div>
                 )}
                 {/* The map itself */}
+                {console.log(randomIngredients)}
                 {map.map((row, rowIndex) => (
                     <div key={rowIndex} style={{ display: "flex" }}>
                         {row.map((cell, colIndex) => (
@@ -143,27 +144,35 @@ const GameBoard = () => {
                                 className={
                                     cell === 1
                                         ? "wall"
-                                        : cell === 2
-                                        ? "randomIngredient"
                                         : cell === 3
                                         ? "ground"
                                         : cell === 4
                                         ? "randomCritter"
                                         : cell === 5
                                         ? "players"
+                                        : cell === 6
+                                        ? "randomIngredient"
+                                        : cell === 7
+                                        ? "randomIngredient"
+                                        : cell === 8
+                                        ? "randomIngredient"   
                                         : null
                                 }
                                 style={
                                     cell === 1
                                         ? { backgroundImage: `url(${wall})` }
-                                        : cell === 2
-                                        ? { backgroundImage: `url(${randomIngredient})` }
                                         : cell === 3
                                         ? { backgroundColor: "white" }
                                         : cell === 4
                                         ? { backgroundImage: `url(${randomCritter})` }
                                         : cell === 5
                                         ? { backgroundImage: `url(${players})` }
+                                        : cell === 6
+                                        ? { backgroundImage: `url(${randomIngredients[0]})` }
+                                        : cell === 7
+                                        ? { backgroundImage: `url(${randomIngredients[1]})` }
+                                        : cell === 8
+                                        ? { backgroundImage: `url(${randomIngredients[2]})` }
                                         : null
                                 }
                             ></div>

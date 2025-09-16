@@ -9,6 +9,8 @@ import App from './App.jsx'
 import Home from './components/Home.jsx'
 import About from './components/About.jsx'
 import Contact from './components/Contact.jsx'
+import Game from './components/Game.jsx'
+import MenuStory from './components/MenuStory.jsx'
 
 const router = createBrowserRouter([
   {
@@ -18,6 +20,14 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "/menu",
+        element: <MenuStory />,
+      },
+      {
+        path: "/game",
+        element: <Game />,
       },
       {
         path: "/about",

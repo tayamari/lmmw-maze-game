@@ -25,7 +25,15 @@ const ingredients = [
      
 const critters = ["crab"];
 
-const getRandomElement = (arr) => arr[Math.floor(Math.random() * arr.length)];
+const getRandomElements = (arr, k) => {
+    for (let i = arr.length - 1; i > 0; i--) {
+        // Choose a random index before the actual element
+        let j = Math.floor(Math.random() * (i + 1));
+        // swap [a,b] by [b,a]
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr.slice(0, k);
+};
 
 // Helper to get image src by name
 const getImageSrc = (name) => {
@@ -33,14 +41,16 @@ const getImageSrc = (name) => {
     return found ? found.src : "";
 };
 
-// Exported function to get a random ingredient image src
-const getRandomIngredientImage = () => {
-    const randomName = getRandomElement(ingredients);
-    return getImageSrc(randomName);
-};
+const getImagesForElements = (arr) => {
+    const images = [];
+    for (let element of arr) {
+        images.push(getImageSrc(element));
+    }
+    return images;
+}
 
-export const randomIngredient = getImageSrc(getRandomElement(ingredients));
-export const randomCritter = getImageSrc(getRandomElement(critters));
+export const randomIngredients = getImagesForElements(getRandomElements(ingredients, 3));
+export const randomCritter = getImagesForElements(getRandomElements(critters, 1));
 export { ingredients, critters, getImageSrc };
 
 

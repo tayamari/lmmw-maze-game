@@ -9,7 +9,7 @@ const imageMap = [
     { name: 'orange', src: '/src/assets/sprites/orange.png' },
     { name: 'cabbage', src: '/src/assets/sprites/cabbage.png' },
     { name: 'chilli-pepper', src: '/src/assets/sprites/chilli-pepper.png' },
-    { name: 'crab', src: '/src/assets/sprites/crab.png' },
+    { name: 'moosebear', src: '/src/assets/sprites/moosebear.png' },
     { name: 'honey-spoon', src: '/src/assets/sprites/honey-spoon.png' },
     { name: 'honey', src: '/src/assets/sprites/honey.png' },
     { name: 'onion', src: '/src/assets/sprites/onion.png' },
@@ -23,7 +23,7 @@ const ingredients = [
     "cabbage", "chilli-pepper", "honey-spoon", "honey", "onion",
      "pumpkin", "orange-juice","beet"];
      
-const critters = ["crab"];
+const critters = ["moosebear"];
 
 const getRandomElement = (arr) => arr[Math.floor(Math.random() * arr.length)];
 

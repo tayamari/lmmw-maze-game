@@ -6,7 +6,7 @@
 .wall {
     width: 50px;
     height: 50px;
-    background-color: #5e318c;
+    background-color: #8E7DBE;
     display: inline-block;
 }
 
@@ -40,7 +40,7 @@ div {
 }
 
 #world {
-  background-color: white;
+  background-color: #f7cfe9; /*background for critters and ingredients*/
   padding: 24px 0;
 }
 
@@ -52,9 +52,8 @@ div {
   width: 700px; /* Increase width if needed */
   margin: 0 auto 24px auto;
   padding: 12px 32px;
-  background: #232323;
+  background: #8c6555;
   color: #fff;
-  border-radius: 24px;
   font-weight: 600;
   font-size: 1.3rem;
   box-sizing: border-box;

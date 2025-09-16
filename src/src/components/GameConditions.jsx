@@ -7,7 +7,7 @@ export function checkWinningCondition(map, setGameOver) {
         // Additional logic for restarting the game or other actions
     } else if (!map.some((row) => row.includes(4))) {
         setGameOver(true);
-        alert("Game over!! You picked up an in item that does not belong in this elixir...Try again!");
+        alert("Game over!! You ran into a moosebear or picked up an item that does not belong in this elixir...Try again!");
         // Additional logic for restarting the game or other actions
     }
 }

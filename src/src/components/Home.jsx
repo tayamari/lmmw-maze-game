@@ -1,11 +1,13 @@
 import React from "react";
-import GameBoard from './GameBoard.jsx'
+import { Link } from "react-router";
 import "./Home.css";
 
 function Home() {
     return(
         <div className="home-container">
-            <GameBoard/>
+            {/* "Title screen" */}
+            <img src="https://placehold.co/600x400" alt="Title Screen Placeholder" />
+            <Link to="/menu">Play!</Link>
         </div>
     )
 }

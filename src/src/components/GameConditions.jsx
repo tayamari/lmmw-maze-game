@@ -1,5 +1,3 @@
-import Timer from "./Timer";
-
 export function checkWinningCondition(map, setGameOver) {
     if (!map.some((row) => row.includes(2))) {
         setGameOver(true);

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import wall from "../assets/sprites/bush.png";
 import { randomIngredients, randomCritter } from './AssetRendering.jsx';
-import players from "../assets/sprites/orange.png";
+import players from "../assets/sprites/basket_player.png";
 import "./GameBoard.css";
 import { checkWinningCondition } from './GameConditions.jsx';
 import Timer from "./Timer";
@@ -95,7 +95,7 @@ const GameBoard = () => {
     };
 
     return (
-        <div id="world" style={{ backgroundColor: "white", padding: "24px 0" }}>
+        <div id="world" style={{ /*backgroundColor: "white",*/ padding: "24px 0" }}>
             <div className="score-timer-bar">
                 <span>Score: {score}</span>
                 <span>
@@ -162,7 +162,7 @@ const GameBoard = () => {
                                     cell === 1
                                         ? { backgroundImage: `url(${wall})` }
                                         : cell === 3
-                                        ? { backgroundColor: "white" }
+                                        ? { backgroundColor: "#f7cfe3ff" }
                                         : cell === 4
                                         ? { backgroundImage: `url(${randomCritter})` }
                                         : cell === 5

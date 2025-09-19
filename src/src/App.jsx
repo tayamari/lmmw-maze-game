@@ -21,7 +21,7 @@ function App() {
       <header>
         <nav className="nav" role="navigation" aria-label="Main navigation">
           <div className="nav-brand">
-            <Link to="/" className="nav-logo" aria-label="Go to Home page">MyGame</Link>
+            <Link to="/" className="nav-logo" aria-label="Go to Home page">Little Miss Medicine Woman</Link>
           </div>
           <button 
             className={`hamburger-menu${isMobileMenuOpen ? ' active' : ''}`}

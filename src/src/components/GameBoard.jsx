@@ -14,7 +14,7 @@ const initialMap = [
     [1, 3, 3, 3, 1, 1, 5, 1, 1, 3, 3, 3, 1],
     [1, 3, 1, 3, 3, 3, 3, 3, 3, 3, 1, 3, 1],
     [1, 3, 1, 1, 3, 3, 1, 3, 3, 1, 1, 3, 1],
-    [1, 4, 3, 3, 3, 3, 1, 4, 3, 3, 3, 8, 1],
+    [1, 3, 3, 3, 3, 3, 1, 4, 3, 3, 3, 8, 1],
     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
 ];
 
@@ -48,7 +48,7 @@ const GameBoard = () => {
         }
 
         // Check if Pacman moves onto an ingredient (cell === 2)
-        if (map[newY][newX] === 2) {
+        if (map[newY][newX] === 6 || map[newY][newX] === 7 || map[newY][newX] === 8) {
             setScore(prev => prev + Math.floor(Math.random() * 5) + 1); // Increase score
             const newMap = map.map((row, rowIdx) =>
                 rowIdx === newY
@@ -135,7 +135,6 @@ const GameBoard = () => {
                     </div>
                 )}
                 {/* The map itself */}
-                {console.log(randomIngredients)}
                 {map.map((row, rowIndex) => (
                     <div key={rowIndex} style={{ display: "flex" }}>
                         {row.map((cell, colIndex) => (

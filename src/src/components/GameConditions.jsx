@@ -1,5 +1,5 @@
 export function checkWinningCondition(map, setGameOver) {
-    if (!map.some((row) => row.includes(2))) {
+    if (!map.some((row) => row.includes(6)) && !map.some((row) => row.includes(7)) && !map.some((row) => row.includes(8))) {
         setGameOver(true);
         alert("Congratulations! You picked the correct remaining ingredients for the elixir and can now make it for Granny B. You win!");
         // Additional logic for restarting the game or other actions

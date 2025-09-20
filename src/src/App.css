@@ -165,6 +165,10 @@ body, #root {
   z-index: 1000;
   margin: 0;
   box-sizing: border-box; /* Ensure padding doesn't overflow */
+  font-family: "Jua", sans-serif;
+  font-weight: 400;
+  font-size: xx-large;
+  font-style: normal;
 }
 
 .nav-links {

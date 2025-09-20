@@ -59,6 +59,10 @@ div {
   box-sizing: border-box;
   letter-spacing: 0.5px;
   gap: 32px; /* Add gap between columns */
+  font-family: "Jua", sans-serif;
+  font-weight: 400;
+  font-size: large;
+  font-style: normal;
 }
 
 .score-timer-bar span {

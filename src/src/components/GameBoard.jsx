@@ -7,17 +7,22 @@ import { checkWinningCondition } from './GameConditions.jsx';
 import Timer from "./Timer";
 
 const initialMap = [
-    [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], 
-    [1, 3, 3, 3, 3, 3, 1, 3, 6, 3, 3, 3, 1],
-    [1, 7, 1, 1, 1, 3, 1, 3, 1, 1, 1, 3, 1],
-    [1, 3, 1, 3, 3, 3, 3, 3, 3, 3, 1, 3, 1],
-    [1, 3, 3, 3, 1, 1, 5, 1, 1, 3, 3, 3, 1],
-    [1, 3, 1, 3, 3, 3, 3, 3, 3, 3, 1, 3, 1],
-    [1, 3, 1, 1, 3, 3, 1, 3, 3, 1, 1, 3, 1],
-    [1, 3, 3, 3, 3, 3, 1, 4, 3, 3, 3, 8, 1],
-    [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-];
+    /*[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],*/
+    [3, 3, 3, 3, 3, 1, 3, 3, 3, 3, 3],
+    [3, 1, 1, 1, 3, 1, 3, 1, 1, 1, 3],
+    [3, 1, 3, 3, 3, 3, 3, 3, 3, 1, 3],
+    [3, 3, 3, 1, 1, 5, 1, 1, 3, 3, 3],
+    [3, 1, 3, 3, 3, 3, 3, 3, 3, 1, 3],
+    [3, 1, 1, 3, 3, 1, 3, 3, 1, 1, 3],
+    [3, 3, 3, 3, 3, 1, 4, 3, 3, 3, 3],
+    /*[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],*/
+]
 
+const indices = Array.from({length: initialMap.length * initialMap[0].length}, (_, i) => i);
+const shuffled = indices.sort(() => 0.5 - Math.random());
+const selectedLocations = shuffled.slice(0, 3);
+const locations = selectedLocations.map(index =>({row: Math.floor(index/initialMap[0].length), col: index % initialMap[0].length}));
+console.log(locations);
 const initialPlayer = { x: 6, y: 4 };
 
 const GameBoard = () => {

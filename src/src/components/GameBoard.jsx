@@ -11,18 +11,50 @@ const initialMap = [
     [3, 3, 3, 3, 3, 1, 3, 3, 3, 3, 3],
     [3, 1, 1, 1, 3, 1, 3, 1, 1, 1, 3],
     [3, 1, 3, 3, 3, 3, 3, 3, 3, 1, 3],
-    [3, 3, 3, 1, 1, 5, 1, 1, 3, 3, 3],
+    [3, 3, 3, 1, 1, 1, 1, 3, 3, 3], // Player will be added at initialMap[3][5]
     [3, 1, 3, 3, 3, 3, 3, 3, 3, 1, 3],
     [3, 1, 1, 3, 3, 1, 3, 3, 1, 1, 3],
-    [3, 3, 3, 3, 3, 1, 4, 3, 3, 3, 3],
+    [3, 3, 3, 3, 3, 1, 3, 3, 3, 3, 3],
     /*[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],*/
 ]
 
-const indices = Array.from({length: initialMap.length * initialMap[0].length}, (_, i) => i);
+// Selecting 5 random locations on the gameboard
+const indices = Array.from({ length: initialMap.length * initialMap[0].length }, (_, i) => i);
 const shuffled = indices.sort(() => 0.5 - Math.random());
-const selectedLocations = shuffled.slice(0, 3);
-const locations = selectedLocations.map(index =>({row: Math.floor(index/initialMap[0].length), col: index % initialMap[0].length}));
-console.log(locations);
+const selectedLocations = shuffled.slice(0, 5);
+const locations = selectedLocations.map(index =>
+({
+    row: Math.floor(index / initialMap[0].length),
+    col: index % initialMap[0].length
+}));
+
+// Assigning values in the GameBoard to each of the random locations
+for (let i = 0; i <= 4; i++) {
+
+    // skip player location for now
+    if (i == 1) {
+        continue;
+    }
+
+    initialMap[locations[i].row][locations[i].col] = i + 4;
+}
+
+// Adding player to GameBoard
+initialMap[3].splice(5, 0, 5);
+
+// Adding left and right hedge rows
+for (let i = 0; i < initialMap.length; i++) {
+    initialMap[i].splice(0, 0, 1);
+    initialMap[i].push(1);
+}
+
+// Adding top hedge row
+initialMap.splice(0, 0, [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]);
+
+// Adding bottom hedge row
+initialMap.push([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]);
+
+
 const initialPlayer = { x: 6, y: 4 };
 
 const GameBoard = () => {
@@ -149,35 +181,35 @@ const GameBoard = () => {
                                     cell === 1
                                         ? "wall"
                                         : cell === 3
-                                        ? "ground"
-                                        : cell === 4
-                                        ? "randomCritter"
-                                        : cell === 5
-                                        ? "players"
-                                        : cell === 6
-                                        ? "randomIngredient"
-                                        : cell === 7
-                                        ? "randomIngredient"
-                                        : cell === 8
-                                        ? "randomIngredient"   
-                                        : null
+                                            ? "ground"
+                                            : cell === 4
+                                                ? "randomCritter"
+                                                : cell === 5
+                                                    ? "players"
+                                                    : cell === 6
+                                                        ? "randomIngredient"
+                                                        : cell === 7
+                                                            ? "randomIngredient"
+                                                            : cell === 8
+                                                                ? "randomIngredient"
+                                                                : null
                                 }
                                 style={
                                     cell === 1
                                         ? { backgroundImage: `url(${wall})` }
                                         : cell === 3
-                                        ? { backgroundColor: "#f7cfe3ff" }
-                                        : cell === 4
-                                        ? { backgroundImage: `url(${randomCritter})` }
-                                        : cell === 5
-                                        ? { backgroundImage: `url(${players})` }
-                                        : cell === 6
-                                        ? { backgroundImage: `url(${randomIngredients[0]})` }
-                                        : cell === 7
-                                        ? { backgroundImage: `url(${randomIngredients[1]})` }
-                                        : cell === 8
-                                        ? { backgroundImage: `url(${randomIngredients[2]})` }
-                                        : null
+                                            ? { backgroundColor: "#f7cfe3ff" }
+                                            : cell === 4
+                                                ? { backgroundImage: `url(${randomCritter})` }
+                                                : cell === 5
+                                                    ? { backgroundImage: `url(${players})` }
+                                                    : cell === 6
+                                                        ? { backgroundImage: `url(${randomIngredients[0]})` }
+                                                        : cell === 7
+                                                            ? { backgroundImage: `url(${randomIngredients[1]})` }
+                                                            : cell === 8
+                                                                ? { backgroundImage: `url(${randomIngredients[2]})` }
+                                                                : null
                                 }
                             ></div>
                         ))}

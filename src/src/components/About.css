@@ -10,6 +10,10 @@
 .about-content {
   background: #232323;
   color: #fff;
+  /*background: #fff;
+  color: #232323;
+  
+  When I tried to insert this code, it applied the background but not the new font color.*/
   border-radius: 18px;
   box-shadow: 0 2px 16px rgba(0,0,0,0.18);
   padding: 2.5rem 2rem;
@@ -17,6 +21,11 @@
   width: 100%;
   margin: 2rem;
   text-align: center;
+   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+h1, h2 {
+  font-family: 'Jua', sans-serif;
 }
 
 .about-content h1 {

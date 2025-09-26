@@ -9,6 +9,21 @@
   background: var(--color-bg-secondary-dark, #222); /* fallback for dark mode */
 }
 
+.play-btn {
+  font-size: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.play-btn:hover {
+  background-color: rgb(234, 170, 201);
+  color: white;
+}
+
+.home-subheader {
+  font-size: 35px;
+}
+
 @media (max-width: 768px) {
   .home-container {
     padding: 1rem 0;

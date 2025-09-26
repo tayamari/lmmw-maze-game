@@ -8,7 +8,7 @@ const imageMap = [
     { name: 'milk-bottle', src: '/src/assets/sprites/milk-bottle.png' },
     { name: 'orange', src: '/src/assets/sprites/orange.png' },
     { name: 'cabbage', src: '/src/assets/sprites/cabbage.png' },
-    { name: 'chilli-pepper', src: '/src/assets/sprites/chilli-pepper.png' },
+    { name: 'chili-pepper', src: '/src/assets/sprites/chili-pepper.png' },
     { name: 'moosebear', src: '/src/assets/sprites/moosebear.png' },
     { name: 'honey-spoon', src: '/src/assets/sprites/honey-spoon.png' },
     { name: 'honey', src: '/src/assets/sprites/honey.png' },
@@ -20,7 +20,7 @@ const imageMap = [
 
 const ingredients = [
     "eggs", "garlic", "milk-bottle", "citrus", "coconut", "orange",
-    "cabbage", "chilli-pepper", "honey-spoon", "honey", "onion",
+    "cabbage", "chili-pepper", "honey-spoon", "honey", "onion",
      "pumpkin", "orange-juice","beet"];
      
 const critters = ["moosebear"];

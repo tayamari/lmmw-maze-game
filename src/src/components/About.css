@@ -8,12 +8,7 @@
 }
 
 .about-content {
-  background: #232323;
-  color: #fff;
-  /*background: #fff;
-  color: #232323;
-  
-  When I tried to insert this code, it applied the background but not the new font color.*/
+  background-color: #add2b7;
   border-radius: 18px;
   box-shadow: 0 2px 16px rgba(0,0,0,0.18);
   padding: 2.5rem 2rem;
@@ -47,7 +42,7 @@ h1, h2 {
   font-size: 1.15rem;
   line-height: 1.7;
   margin-bottom: 1.5rem;
-  color: #fff;
+  color: #232323;
 }
 
 .game-features ul {
@@ -56,12 +51,30 @@ h1, h2 {
   margin: 0 auto 1.5rem auto;
   text-align: left;
   display: inline-block;
+  line-height: 1.2;
 }
 
 .game-features li {
   margin-bottom: 1em;
   font-size: 1.1rem;
   color: #fff;
+}
+
+.development-info ul {
+   list-style: disc inside;
+  padding-left: 1.5em;
+  margin: 0 auto 1.5rem auto;
+  text-align: left;
+  display: inline-block;
+  line-height: 1.2;
+}
+
+.development-info li {
+  margin-bottom: 1em;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
 }
 
 @media (max-width: 700px) {

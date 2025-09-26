@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router";
 import "./Home.css";
 import { randomIngredients, randomCritter } from './AssetRendering.jsx';
+import "./MenuStory.css";
 
 function MenuStory() {
     return(
@@ -9,6 +10,7 @@ function MenuStory() {
             <div className="story">
                 <h2>Oh my! It's nice to meet you, Neighbor Dupree. </h2>
                 <h2>You know I used to know your Granny Emma, back in the day.</h2>
+                <h2>Oh, she used to get us right with those earthly remedies.</h2>
                 <h2>Well darlin', I know she had to have taught you well. Me? I'm not feeling well. Could you help me?
                 </h2>
                 <h1>Instructions</h1>
@@ -20,7 +22,9 @@ function MenuStory() {
             <img src={randomIngredients[0]}/>
             <img src={randomIngredients[1]}/>
             <img src={randomIngredients[2]}/>
-            <Link to="/game">Enter the hedge maze!</Link>
+            <Link to="/game">
+            <button className="menuStory-btn">Enter the hedge maze!</button>
+            </Link>
         </div>
     )
 }

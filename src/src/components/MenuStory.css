@@ -1,0 +1,11 @@
+.menuStory-btn {
+font-size: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 20px;
+}
+
+.menuStory-btn:hover {
+background-color: rgb(234, 170, 201);
+  color: white;
+}

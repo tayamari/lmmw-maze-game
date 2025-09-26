@@ -8,7 +8,11 @@ function Home() {
         <div className="home-container">
             {/* "Title screen" */}
             <img src={HeroImage} alt="Little Miss Medicine Woman title screen" />
-            <Link to="/menu">Play!</Link>
+            <h1 className="home-subheader">Can you make an elixir to heal a neighbor?</h1>
+            
+            <Link to="/menu">
+            <button className="play-btn">Play!</button>
+            </Link>
         </div>
     )
 }

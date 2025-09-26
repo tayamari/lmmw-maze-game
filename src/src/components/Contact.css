@@ -70,12 +70,15 @@
 }
 
 .submit-btn {
-  background-color: var(--color-primary);
-  color: var(--color-bg-primary);
-  padding: var(--spacing-sm) var(--spacing-xl);
+  background-color: rgb(234, 170, 201);
+  color: white;
+  padding: 20px;
+  border-radius: 18px;
+  /*original button padding - padding: var(--spacing-sm) var(--spacing-xl);*/
   border: none;
   border-radius: var(--radius-sm);
-  font-size: var(--font-size-base);
+  font-size: 25px;
+  /*font-size: var(--font-size-base);*/
   font-weight: var(--font-weight-medium);
   cursor: pointer;
   transition: var(--transition-normal);
@@ -83,7 +86,8 @@
 }
 
 .submit-btn:hover {
-  background-color: var(--color-primary-hover);
+  background-color: var(--color-primary);
+   color: var(--color-bg-primary);
 }
 
 .submit-btn:active {

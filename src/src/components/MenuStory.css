@@ -10,6 +10,25 @@ background-color: rgb(234, 170, 201);
   color: white;
 }
 
-.story {
+.granny {
+    width: 20%;
+}
 
+h2 {
+    margin-left: 15%;
+    margin-right: 15%;
+    line-height: normal;
+}
+
+.ingredients-header h2{
+    margin-top: 4px;
+}
+
+.help {
+    color: rgb(236, 219, 227);
+    font-size: 35px;
+}
+
+.menuStory-header {
+    color: #4e4943;
 }

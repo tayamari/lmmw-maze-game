@@ -76,6 +76,10 @@ h1, h2 {
  color: #776868;
 }
 
+span {
+  color: #232323;
+}
+
 @media (max-width: 700px) {
   .about-content {
     padding: 1.5rem 0.5rem;

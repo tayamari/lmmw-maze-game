@@ -13,7 +13,8 @@ function Timer({ duration, gameOver }) {
     if (gameOver) {
         return <span className="timer-inline">0:00</span>;
     }
-
+    //setGameOver(true);
+       // alert("Game over!! You ran into a moosebear...Try again!");
     const renderer = ({ minutes, seconds, completed }) => {
         if (completed) return <span className="timer-inline">0:00</span>;
         // Pad seconds with leading zero if needed
@@ -26,6 +27,9 @@ function Timer({ duration, gameOver }) {
             date={completedTime}
             intervalDelay={0}
             renderer={renderer}
+            onComplete={() => {
+            alert("Game Over! You ran out of time!"); // 
+            }}
         />
     );
 }

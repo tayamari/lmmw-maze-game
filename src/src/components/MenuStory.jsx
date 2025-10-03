@@ -21,7 +21,7 @@ function MenuStory() {
                     <br/>
                       <br/>
                 <h1 className="menuStory-header">Instructions</h1>
-                <h2>You have all but THREE ingredients you need to make Granny B's elixir to improve her health. In 45 seconds, use the maze to find them.</h2>
+                <h2>You have all but THREE ingredients you need to make Granny B's elixir and improve her health. In 45 SECONDS, use the maze to find them.</h2>
                 <h2>Ah, yes...And be weary of the moosebears— They might want your ingredients too!</h2>
                 <h2 className="help">Can you do it?</h2>
                 </div>

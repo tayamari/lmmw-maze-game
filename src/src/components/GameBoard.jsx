@@ -139,7 +139,7 @@ const GameBoard = () => {
                     Time:{" "}
                     <Timer
                         key={timerKey}
-                        duration={30}
+                        duration={45}
                         gameOver={gameOver || !gameStarted}
                     />
                 </span>

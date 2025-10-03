@@ -1,21 +1,36 @@
 import React from "react";
+import citrus from "../assets/sprites/citrus.png";
+import coconut from "../assets/sprites/coconut.png";
+import eggs from "../assets/sprites/eggs.png";
+import garlic from "../assets/sprites/garlic.png";
+import milkBottle from "../assets/sprites/milk-bottle.png";
+import orange from "../assets/sprites/orange.png";
+import cabbage from "../assets/sprites/cabbage.png";
+import chiliPepper from "../assets/sprites/chili-pepper.png";
+import moosebear from "../assets/sprites/moosebear.png";
+import honeySpoon from "../assets/sprites/honey-spoon.png";
+import honey from "../assets/sprites/honey.png";
+import onion from "../assets/sprites/onion.png";
+import pumpkin from "../assets/sprites/pumpkin.png";
+import orangeJuice from "../assets/sprites/orange-juice.png";
+import beet from "../assets/sprites/beet.png";
 
 const imageMap = [
-    { name: 'citrus', src: '/src/assets/sprites/citrus.png' },
-    { name: 'coconut', src: '/src/assets/sprites/coconut.png' },
-    { name: 'eggs', src: '/src/assets/sprites/eggs.png' },
-    { name: 'garlic', src: '/src/assets/sprites/garlic.png' },
-    { name: 'milk-bottle', src: '/src/assets/sprites/milk-bottle.png' },
-    { name: 'orange', src: '/src/assets/sprites/orange.png' },
-    { name: 'cabbage', src: '/src/assets/sprites/cabbage.png' },
-    { name: 'chili-pepper', src: '/src/assets/sprites/chili-pepper.png' },
-    { name: 'moosebear', src: '/src/assets/sprites/moosebear.png' },
-    { name: 'honey-spoon', src: '/src/assets/sprites/honey-spoon.png' },
-    { name: 'honey', src: '/src/assets/sprites/honey.png' },
-    { name: 'onion', src: '/src/assets/sprites/onion.png' },
-    { name: 'pumpkin', src: '/src/assets/sprites/pumpkin.png' },
-    { name: 'orange-juice', src: '/src/assets/sprites/orange-juice.png' },
-    { name: 'beet', src: '/src/assets/sprites/beet.png' },
+  { name: "citrus", src: citrus },
+  { name: "coconut", src: coconut },
+  { name: "eggs", src: eggs },
+  { name: "garlic", src: garlic },
+  { name: "milk-bottle", src: milkBottle },
+  { name: "orange", src: orange },
+  { name: "cabbage", src: cabbage },
+  { name: "chili-pepper", src: chiliPepper },
+  { name: "moosebear", src: moosebear },
+  { name: "honey-spoon", src: honeySpoon },
+  { name: "honey", src: honey },
+  { name: "onion", src: onion },
+  { name: "pumpkin", src: pumpkin },
+  { name: "orange-juice", src: orangeJuice },
+  { name: "beet", src: beet },
 ];
 
 const ingredients = [

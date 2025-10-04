@@ -28,7 +28,7 @@ function Timer({ duration, gameOver }) {
             intervalDelay={0}
             renderer={renderer}
             onComplete={() => {
-            alert("Game Over! You ran out of time!"); // 
+            alert("Game over! You ran out of time. Try again!"); // 
             }}
         />
     );

@@ -7,7 +7,7 @@ function About() {
       <div className="about-content">
         <h1>About Our Game</h1>
         <p>
-          Welcome to our Maze Adventure Game! 🎮 It is loosely inspired by African American Granny Woman and traditional healer <a href="https://theherbalacademy.com/blog/black-herbalist-spotlight-emma-dupree/">Emma Dupree</a>. This interactive project is part of Tay and Josie's Spring 2025 Capstone, where we’re bringing together creativity and modern web technologies to deliver an exciting gaming experience built with React.
+          Welcome to our Maze Adventure Game! 🎮 It is loosely inspired by African American Granny Woman and traditional healer <a href="https://theherbalacademy.com/blog/black-herbalist-spotlight-emma-dupree/">Emma Dupree</a>. This interactive project is part of <a href="https://www.linkedin.com/in/tayloralittle/">Tay Little</a> and <a href="https://www.linkedin.com/in/joseann-boneo/">Joseann Boneo</a>'s Spring 2025 Capstone, where we’re bringing together creativity and modern web technologies to deliver an exciting gaming experience built with React.
         </p>
         <div className="game-features">
           <h2>Game Features</h2>

@@ -66,7 +66,7 @@ function Contact() {
               value={formData.message}
               onChange={handleChange}
               required
-              placeholder="Tell us what's on your mind..."
+              placeholder="This contact form is currently just for show, if you want to get in touch, please reach out on LinkedIn via the 'About' page. :)"
               rows="5"
             ></textarea>
           </div>
